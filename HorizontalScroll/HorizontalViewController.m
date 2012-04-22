@@ -8,27 +8,100 @@
 
 #import "HorizontalViewController.h"
 
+static NSUInteger SCROLLVIEW_HEIGHT = 360;
+
+
 @interface HorizontalViewController ()
+
+@property (nonatomic) BOOL pageControlUsed;
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 
 @end
 
+
 @implementation HorizontalViewController
+
+@synthesize backgroundView;
+@synthesize scrollView;
+@synthesize pageControl;
+@synthesize infoButton;
+@synthesize pageControlUsed;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self customizeAppearance];
+    [self enableScrollView];
 }
 
-- (void)viewDidUnload
+- (void)customizeAppearance
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
+    // Adjust colors.
+    backgroundView.backgroundColor = [UIColor lightGrayColor];
+    pageControl.backgroundColor = [UIColor clearColor];
+}
+
+- (void)enableScrollView
+{
+    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * 4, SCROLLVIEW_HEIGHT);
+    scrollView.delegate = self;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)view
+{
+    // Check to see if the UIPageControl was used.
+    if (pageControlUsed) {
+        return;
+    }
+    
+    // Switch the UIPageControl indicator.
+    CGFloat pageWidth = scrollView.frame.size.width;
+    int page = floor((view.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    
+    if (pageControl.currentPage != page) {
+        NSLog(@"%d", pageControl.currentPage);
+        pageControl.currentPage = page;
+    }
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    pageControlUsed = NO;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    pageControlUsed = NO;
+}
+
+- (IBAction)changePage:(id)sender {
+    // Programmatically scroll the UIScrollView.
+    int page = pageControl.currentPage;
+    CGRect frame = scrollView.frame;
+    frame.origin.x = frame.size.width * page;
+    frame.origin.y = 0;
+    [scrollView scrollRectToVisible:frame animated:YES];
+    
+    // Signal that the UIPageControl was used.
+    pageControlUsed = YES;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"More Info"]) {
+        NSLog(@"Info button was tapped.");
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)viewDidUnload {
+    [self setInfoButton:nil];
+    [super viewDidUnload];
 }
 
 @end

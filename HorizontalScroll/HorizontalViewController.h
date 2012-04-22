@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HorizontalViewController : UIViewController
+@interface HorizontalViewController : UIViewController <UIScrollViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UIView *backgroundView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UIButton *infoButton;
+
+- (IBAction)changePage:(id)sender;
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79D27E501543D14B0060AB6E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79D27E4F1543D14B0060AB6E /* README.md */; };
 		79F9665C154385F9006CFC6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F9665B154385F9006CFC6E /* UIKit.framework */; };
 		79F9665E154385F9006CFC6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F9665D154385F9006CFC6E /* Foundation.framework */; };
 		79F96660154385F9006CFC6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F9665F154385F9006CFC6E /* CoreGraphics.framework */; };
@@ -19,19 +20,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79D27E4F1543D14B0060AB6E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		79F96657154385F9006CFC6E /* HorizontalScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F9665B154385F9006CFC6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79F9665D154385F9006CFC6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79F9665F154385F9006CFC6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		79F96663154385F9006CFC6E /* HorizontalScroll-Info.plist */ = {isa = PBXFileReference; path = "HorizontalScroll-Info.plist"; sourceTree = "<group>"; };
+		79F96663154385F9006CFC6E /* HorizontalScroll-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HorizontalScroll-Info.plist"; sourceTree = "<group>"; };
 		79F96665154385F9006CFC6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79F96667154385F9006CFC6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		79F96669154385F9006CFC6E /* HorizontalScroll-Prefix.pch */ = {isa = PBXFileReference; path = "HorizontalScroll-Prefix.pch"; sourceTree = "<group>"; };
-		79F9666A154385F9006CFC6E /* HorizontalAppDelegate.h */ = {isa = PBXFileReference; path = HorizontalAppDelegate.h; sourceTree = "<group>"; };
+		79F96669154385F9006CFC6E /* HorizontalScroll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HorizontalScroll-Prefix.pch"; sourceTree = "<group>"; };
+		79F9666A154385F9006CFC6E /* HorizontalAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalAppDelegate.h; sourceTree = "<group>"; };
 		79F9666B154385F9006CFC6E /* HorizontalAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalAppDelegate.m; sourceTree = "<group>"; };
 		79F9666D154385F9006CFC6E /* HorizontalScroll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HorizontalScroll.entitlements; sourceTree = "<group>"; };
 		79F96670154385F9006CFC6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		79F96672154385F9006CFC6E /* HorizontalViewController.h */ = {isa = PBXFileReference; path = HorizontalViewController.h; sourceTree = "<group>"; };
+		79F96672154385F9006CFC6E /* HorizontalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalViewController.h; sourceTree = "<group>"; };
 		79F96673154385F9006CFC6E /* HorizontalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +54,7 @@
 		79F9664C154385F9006CFC6E = {
 			isa = PBXGroup;
 			children = (
+				79D27E4F1543D14B0060AB6E /* README.md */,
 				79F96661154385F9006CFC6E /* HorizontalScroll */,
 				79F9665A154385F9006CFC6E /* Frameworks */,
 				79F96658154385F9006CFC6E /* Products */,
@@ -156,6 +159,7 @@
 				79F96666154385F9006CFC6E /* InfoPlist.strings in Resources */,
 				79F9666E154385F9006CFC6E /* HorizontalScroll.entitlements in Resources */,
 				79F96671154385F9006CFC6E /* MainStoryboard.storyboard in Resources */,
+				79D27E501543D14B0060AB6E /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +248,6 @@
 		79F96678154385F9006CFC6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = HorizontalScroll/HorizontalScroll.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HorizontalScroll/HorizontalScroll-Prefix.pch";
 				INFOPLIST_FILE = "HorizontalScroll/HorizontalScroll-Info.plist";
@@ -256,7 +259,6 @@
 		79F96679154385F9006CFC6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = HorizontalScroll/HorizontalScroll.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HorizontalScroll/HorizontalScroll-Prefix.pch";
 				INFOPLIST_FILE = "HorizontalScroll/HorizontalScroll-Info.plist";
@@ -284,6 +286,7 @@
 				79F96679154385F9006CFC6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
