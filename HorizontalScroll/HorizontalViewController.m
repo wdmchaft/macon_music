@@ -8,6 +8,7 @@
 
 #import "HorizontalViewController.h"
 
+static NSUInteger PAGE_COUNT = 4;
 static NSUInteger SCROLLVIEW_HEIGHT = 360;
 
 
@@ -44,7 +45,7 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 
 - (void)enableScrollView
 {
-    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * 4, SCROLLVIEW_HEIGHT);
+    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * PAGE_COUNT, SCROLLVIEW_HEIGHT);
     scrollView.delegate = self;
 }
 
@@ -59,19 +60,19 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
     CGFloat pageWidth = scrollView.frame.size.width;
     int page = floor((view.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     
-    if (pageControl.currentPage != page) {
-        NSLog(@"%d", pageControl.currentPage);
-        pageControl.currentPage = page;
-    }
+    // Update the UIPageControl.
+    pageControl.currentPage = page;
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
+    // Signal the UIPageControl was not used.
     pageControlUsed = NO;
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
+    // Signal the UIPageControl was not used.
     pageControlUsed = NO;
 }
 
