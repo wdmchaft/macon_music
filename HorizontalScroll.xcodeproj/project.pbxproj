@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		79BFD8F615449A3900327A05 /* poster.png in Resources */ = {isa = PBXBuildFile; fileRef = 79BFD8F515449A3900327A05 /* poster.png */; };
+		79BFD8F915449FB200327A05 /* PosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BFD8F815449FB200327A05 /* PosterViewController.m */; };
 		79D27E501543D14B0060AB6E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79D27E4F1543D14B0060AB6E /* README.md */; };
 		79F9665C154385F9006CFC6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F9665B154385F9006CFC6E /* UIKit.framework */; };
 		79F9665E154385F9006CFC6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F9665D154385F9006CFC6E /* Foundation.framework */; };
@@ -22,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		79BFD8F515449A3900327A05 /* poster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poster.png; sourceTree = "<group>"; };
+		79BFD8F715449FB200327A05 /* PosterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterViewController.h; sourceTree = "<group>"; };
+		79BFD8F815449FB200327A05 /* PosterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterViewController.m; sourceTree = "<group>"; };
 		79D27E4F1543D14B0060AB6E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		79F96657154385F9006CFC6E /* HorizontalScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F9665B154385F9006CFC6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -67,6 +70,8 @@
 			children = (
 				79F96672154385F9006CFC6E /* HorizontalViewController.h */,
 				79F96673154385F9006CFC6E /* HorizontalViewController.m */,
+				79BFD8F715449FB200327A05 /* PosterViewController.h */,
+				79BFD8F815449FB200327A05 /* PosterViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				79F96668154385F9006CFC6E /* main.m in Sources */,
 				79F9666C154385F9006CFC6E /* HorizontalAppDelegate.m in Sources */,
 				79F96674154385F9006CFC6E /* HorizontalViewController.m in Sources */,
+				79BFD8F915449FB200327A05 /* PosterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

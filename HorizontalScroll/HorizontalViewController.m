@@ -7,6 +7,7 @@
 //
 
 #import "HorizontalViewController.h"
+#import "PosterViewController.h"
 
 static NSUInteger PAGE_COUNT = 4;
 static NSUInteger SCROLLVIEW_HEIGHT = 360;
@@ -55,15 +56,15 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 {
     // Load the UIScrollView with the Poster controller from the storyboard.
     for (int page = 0; page < PAGE_COUNT; page++) {
-        UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Poster"];
+        PosterViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Poster"];
         CGRect frame = scrollView.frame;
         frame.origin.x = frame.size.width * page;
         frame.origin.y = 0;
         frame.size.height = SCROLLVIEW_HEIGHT;
         controller.view.frame = frame;
         [scrollView addSubview:controller.view];
-        NSLog(@"%@", scrollView.subviews);
     }
+    NSLog(@"%@", scrollView.subviews);
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)view
