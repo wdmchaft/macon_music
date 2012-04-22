@@ -23,6 +23,7 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 
 @implementation HorizontalViewController
 
+@synthesize viewControllers;
 @synthesize backgroundView;
 @synthesize scrollView;
 @synthesize pageControl;
@@ -34,6 +35,7 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
     [super viewDidLoad];
     [self customizeAppearance];
     [self enableScrollView];
+    [self loadScrollView];
 }
 
 - (void)customizeAppearance
@@ -47,6 +49,21 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 {
     scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * PAGE_COUNT, SCROLLVIEW_HEIGHT);
     scrollView.delegate = self;
+}
+
+- (void)loadScrollView
+{
+    // Load the UIScrollView with the Poster controller from the storyboard.
+    for (int page = 0; page < PAGE_COUNT; page++) {
+        UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Poster"];
+        CGRect frame = scrollView.frame;
+        frame.origin.x = frame.size.width * page;
+        frame.origin.y = 0;
+        frame.size.height = SCROLLVIEW_HEIGHT;
+        controller.view.frame = frame;
+        [scrollView addSubview:controller.view];
+        NSLog(@"%@", scrollView.subviews);
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)view

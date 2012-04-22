@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79BFD8F615449A3900327A05 /* poster.png in Resources */ = {isa = PBXBuildFile; fileRef = 79BFD8F515449A3900327A05 /* poster.png */; };
 		79D27E501543D14B0060AB6E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79D27E4F1543D14B0060AB6E /* README.md */; };
 		79F9665C154385F9006CFC6E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F9665B154385F9006CFC6E /* UIKit.framework */; };
 		79F9665E154385F9006CFC6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F9665D154385F9006CFC6E /* Foundation.framework */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79BFD8F515449A3900327A05 /* poster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poster.png; sourceTree = "<group>"; };
 		79D27E4F1543D14B0060AB6E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		79F96657154385F9006CFC6E /* HorizontalScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F9665B154385F9006CFC6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -51,6 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79D27E551543DE790060AB6E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79F9666F154385F9006CFC6E /* MainStoryboard.storyboard */,
+				79BFD8F515449A3900327A05 /* poster.png */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		79D27E561543DE7C0060AB6E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79F96672154385F9006CFC6E /* HorizontalViewController.h */,
+				79F96673154385F9006CFC6E /* HorizontalViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		79F9664C154385F9006CFC6E = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +104,8 @@
 			children = (
 				79F9666A154385F9006CFC6E /* HorizontalAppDelegate.h */,
 				79F9666B154385F9006CFC6E /* HorizontalAppDelegate.m */,
-				79F9666F154385F9006CFC6E /* MainStoryboard.storyboard */,
-				79F96672154385F9006CFC6E /* HorizontalViewController.h */,
-				79F96673154385F9006CFC6E /* HorizontalViewController.m */,
+				79D27E561543DE7C0060AB6E /* Controllers */,
+				79D27E551543DE790060AB6E /* Views */,
 				79F96662154385F9006CFC6E /* Supporting Files */,
 			);
 			path = HorizontalScroll;
@@ -160,6 +179,7 @@
 				79F9666E154385F9006CFC6E /* HorizontalScroll.entitlements in Resources */,
 				79F96671154385F9006CFC6E /* MainStoryboard.storyboard in Resources */,
 				79D27E501543D14B0060AB6E /* README.md in Resources */,
+				79BFD8F615449A3900327A05 /* poster.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
