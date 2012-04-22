@@ -100,9 +100,4 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)viewDidUnload {
-    [self setInfoButton:nil];
-    [super viewDidUnload];
-}
-
 @end
