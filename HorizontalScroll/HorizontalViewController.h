@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *infoButton;
 
 - (IBAction)changePage:(id)sender;
+- (IBAction)tapPoster:(id)sender;
 
 @end

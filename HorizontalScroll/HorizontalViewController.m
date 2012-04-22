@@ -115,7 +115,13 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 }
 
 - (IBAction)posterTap:(id)sender{
-    NSLog(@"You tapped on the poster!");
+    // When a poster image has been tapped, have the Navigation Controller
+    // push to the designated UIViewController.
+    UIButton *btn = sender;
+    float position = btn.superview.frame.origin.x / scrollView.frame.size.width;
+    NSLog(@"%f", position);
+    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Poster Tap"];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
