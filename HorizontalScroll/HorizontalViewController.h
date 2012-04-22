@@ -10,7 +10,6 @@
 
 @interface HorizontalViewController : UIViewController <UIScrollViewDelegate>
 
-@property (nonatomic, retain) NSMutableArray *viewControllers;
 @property (weak, nonatomic) IBOutlet UIView *backgroundView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;

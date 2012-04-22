@@ -24,7 +24,6 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 
 @implementation HorizontalViewController
 
-@synthesize viewControllers;
 @synthesize backgroundView;
 @synthesize scrollView;
 @synthesize pageControl;
@@ -56,15 +55,24 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 {
     // Load the UIScrollView with the Poster controller from the storyboard.
     for (int page = 0; page < PAGE_COUNT; page++) {
-        PosterViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Poster"];
+        // Calculate the correct frame.
         CGRect frame = scrollView.frame;
         frame.origin.x = frame.size.width * page;
         frame.origin.y = 0;
         frame.size.height = SCROLLVIEW_HEIGHT;
+        
+        // Create a PosterViewController.
+        PosterViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Poster"];
         controller.view.frame = frame;
+        
+        // Make sure we can access when the poster image is tapped.
+        [controller.button addTarget:self action:@selector(posterTap:) forControlEvents:UIControlEventTouchUpInside];
+        
+        // Add the PosterViewController's view to the UIScrollView.
         [scrollView addSubview:controller.view];
+        
+        NSLog(@"%@", controller.button.imageView.image);
     }
-    NSLog(@"%@", scrollView.subviews);
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)view
@@ -104,6 +112,10 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
     
     // Signal that the UIPageControl was used.
     pageControlUsed = YES;
+}
+
+- (IBAction)posterTap:(id)sender{
+    NSLog(@"You tapped on the poster!");
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

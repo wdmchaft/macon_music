@@ -10,6 +10,6 @@
 
 @interface PosterViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
