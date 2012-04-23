@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79227B101544F71600E893DC /* grillcloth.png in Resources */ = {isa = PBXBuildFile; fileRef = 79227B0E1544F71600E893DC /* grillcloth.png */; };
+		79227B111544F71600E893DC /* grillcloth@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79227B0F1544F71600E893DC /* grillcloth@2x.png */; };
+		79227B13154500B800E893DC /* poster@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79227B12154500B700E893DC /* poster@2x.png */; };
+		795095D41544EFF100BD8A5C /* rock_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 795095D21544EFF100BD8A5C /* rock_background.png */; };
+		795095D51544EFF100BD8A5C /* rock_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 795095D31544EFF100BD8A5C /* rock_background@2x.png */; };
 		79BFD8F615449A3900327A05 /* poster.png in Resources */ = {isa = PBXBuildFile; fileRef = 79BFD8F515449A3900327A05 /* poster.png */; };
 		79BFD8F915449FB200327A05 /* PosterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79BFD8F815449FB200327A05 /* PosterViewController.m */; };
 		79D27E501543D14B0060AB6E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79D27E4F1543D14B0060AB6E /* README.md */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79227B0E1544F71600E893DC /* grillcloth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grillcloth.png; sourceTree = "<group>"; };
+		79227B0F1544F71600E893DC /* grillcloth@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grillcloth@2x.png"; sourceTree = "<group>"; };
+		79227B12154500B700E893DC /* poster@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poster@2x.png"; sourceTree = "<group>"; };
+		795095D21544EFF100BD8A5C /* rock_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock_background.png; sourceTree = "<group>"; };
+		795095D31544EFF100BD8A5C /* rock_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rock_background@2x.png"; sourceTree = "<group>"; };
 		79BFD8F515449A3900327A05 /* poster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poster.png; sourceTree = "<group>"; };
 		79BFD8F715449FB200327A05 /* PosterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterViewController.h; sourceTree = "<group>"; };
 		79BFD8F815449FB200327A05 /* PosterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterViewController.m; sourceTree = "<group>"; };
@@ -59,7 +69,12 @@
 		795AFE671544C34B00E27632 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				79227B0E1544F71600E893DC /* grillcloth.png */,
+				79227B0F1544F71600E893DC /* grillcloth@2x.png */,
+				795095D21544EFF100BD8A5C /* rock_background.png */,
+				795095D31544EFF100BD8A5C /* rock_background@2x.png */,
 				79BFD8F515449A3900327A05 /* poster.png */,
+				79227B12154500B700E893DC /* poster@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -193,6 +208,11 @@
 				79F96671154385F9006CFC6E /* MainStoryboard.storyboard in Resources */,
 				79D27E501543D14B0060AB6E /* README.md in Resources */,
 				79BFD8F615449A3900327A05 /* poster.png in Resources */,
+				795095D41544EFF100BD8A5C /* rock_background.png in Resources */,
+				795095D51544EFF100BD8A5C /* rock_background@2x.png in Resources */,
+				79227B101544F71600E893DC /* grillcloth.png in Resources */,
+				79227B111544F71600E893DC /* grillcloth@2x.png in Resources */,
+				79227B13154500B800E893DC /* poster@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

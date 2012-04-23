@@ -13,7 +13,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self customizeAppearance];
     return YES;
+}
+
+- (void)customizeAppearance
+{
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"grillcloth.png"]
+                                       forBarMetrics:UIBarMetricsDefault];
 }
 							
 @end

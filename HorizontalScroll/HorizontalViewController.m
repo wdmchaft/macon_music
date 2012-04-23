@@ -41,7 +41,7 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 - (void)customizeAppearance
 {
     // Adjust colors.
-    backgroundView.backgroundColor = [UIColor lightGrayColor];
+    backgroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"rock_background.png"]];
     pageControl.backgroundColor = [UIColor clearColor];
 }
 
