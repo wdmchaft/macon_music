@@ -56,11 +56,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		795AFE671544C34B00E27632 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				79BFD8F515449A3900327A05 /* poster.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		79D27E551543DE790060AB6E /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				79F9666F154385F9006CFC6E /* MainStoryboard.storyboard */,
-				79BFD8F515449A3900327A05 /* poster.png */,
+				795AFE671544C34B00E27632 /* Images */,
 			);
 			name = Views;
 			sourceTree = "<group>";
