@@ -19,7 +19,7 @@
 
 - (void)customizeAppearance
 {
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"grillcloth.png"]
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"leather.png"]
                                        forBarMetrics:UIBarMetricsDefault];
 }
 							
