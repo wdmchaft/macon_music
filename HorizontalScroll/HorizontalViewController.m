@@ -28,6 +28,7 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 @synthesize scrollView;
 @synthesize pageControl;
 @synthesize infoButton;
+@synthesize facebookButton;
 @synthesize pageControlUsed;
 
 - (void)viewDidLoad
@@ -43,6 +44,11 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
     // Adjust colors.
     backgroundView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"rock_background.png"]];
     pageControl.backgroundColor = [UIColor clearColor];
+    
+    // Add the Facebook image.
+    [facebookButton setImage:[UIImage imageNamed:@"facebook.png"] forState:UIControlStateNormal];
+    [facebookButton setShowsTouchWhenHighlighted:YES];
+    facebookButton.backgroundColor = [UIColor clearColor];
 }
 
 - (void)enableScrollView
@@ -136,4 +142,8 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)viewDidUnload {
+    [self setFacebookButton:nil];
+    [super viewDidUnload];
+}
 @end
