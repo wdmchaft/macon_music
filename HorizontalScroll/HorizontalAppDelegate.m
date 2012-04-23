@@ -21,6 +21,10 @@
 {
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"leather.png"]
                                        forBarMetrics:UIBarMetricsDefault];
+    UIImage *back = [[UIImage imageNamed:@"back.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(1, 15, 1, 5)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:back
+                                                      forState:UIControlStateNormal
+                                                    barMetrics:UIBarMetricsDefault];
 }
 							
 @end
