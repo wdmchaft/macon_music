@@ -70,6 +70,19 @@
             </objects>
             <point key="canvasLocation" x="774" y="68"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="qXk-qo-IOQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzY-5b-iua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Hidden View" id="fqh-WL-ubx" sceneMemberID="viewController">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" image="hidden_view.png" id="C2I-DI-75D">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="299" y="692"/>
+        </scene>
         <!--Poster View Controller-->
         <scene sceneID="vuT-y9-Ac0">
             <objects>
@@ -101,11 +114,11 @@
             </objects>
             <point key="canvasLocation" x="774" y="692"/>
         </scene>
-        <!--View Controller-->
+        <!--Band View Controller-->
         <scene sceneID="Bkn-m1-yvc">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONg-vY-UZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="Poster Tap" id="Zdv-ee-62U" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Band" id="Zdv-ee-62U" customClass="BandViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N6f-ha-2vp">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -166,9 +179,13 @@ Now that we know who you are, I know who I am. I'm not a mistake! It all makes s
         </scene>
     </scenes>
     <resources>
+        <image name="hidden_view.png" width="320" height="480"/>
         <image name="poster.png" width="240" height="340"/>
     </resources>
     <classes>
+        <class className="BandViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BandViewController.h"/>
+        </class>
         <class className="HorizontalViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HorizontalViewController.h"/>
             <relationships>

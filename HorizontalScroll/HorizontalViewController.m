@@ -8,6 +8,7 @@
 
 #import "HorizontalViewController.h"
 #import "PosterViewController.h"
+#import "BandViewController.h"
 
 static NSUInteger PAGE_COUNT = 4;
 static NSUInteger SCROLLVIEW_HEIGHT = 360;
@@ -37,6 +38,7 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
     [self customizeAppearance];
     [self enableScrollView];
     [self loadScrollView];
+    // [self addHiddenView];
 }
 
 - (void)customizeAppearance
@@ -79,6 +81,16 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
         
         NSLog(@"%@", controller.button.imageView.image);
     }
+}
+
+- (void)addHiddenView
+{
+    // Add the hidden CFA view.
+    UIViewController *hidden = [self.storyboard instantiateViewControllerWithIdentifier:@"Hidden View"];
+    CGRect frame = scrollView.frame;
+    frame.origin.x = -frame.size.width;
+    hidden.view.frame = frame;
+    [scrollView addSubview:hidden.view];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)view
@@ -126,7 +138,7 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
     UIButton *btn = sender;
     float position = btn.superview.frame.origin.x / scrollView.frame.size.width;
     NSLog(@"%f", position);
-    UIViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Poster Tap"];
+    BandViewController *controller = [self.storyboard instantiateViewControllerWithIdentifier:@"Band"];
     [self.navigationController pushViewController:controller animated:YES];
 }
 
