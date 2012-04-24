@@ -1,5 +1,6 @@
-HorizontalScroll
-================
+Macon Music
+===========
 
-Testing how to make a simple horizontal scroller with an interactive
-UIPageControl and UIScrollView.
+A Labs Friday project.
+
+![screenshot](http://i.imgur.com/VRRGE.png)
