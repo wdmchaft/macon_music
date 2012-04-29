@@ -29,8 +29,7 @@
 		79F96660154385F9006CFC6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F9665F154385F9006CFC6E /* CoreGraphics.framework */; };
 		79F96666154385F9006CFC6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79F96664154385F9006CFC6E /* InfoPlist.strings */; };
 		79F96668154385F9006CFC6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F96667154385F9006CFC6E /* main.m */; };
-		79F9666C154385F9006CFC6E /* HorizontalAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F9666B154385F9006CFC6E /* HorizontalAppDelegate.m */; };
-		79F9666E154385F9006CFC6E /* HorizontalScroll.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 79F9666D154385F9006CFC6E /* HorizontalScroll.entitlements */; };
+		79F9666C154385F9006CFC6E /* MaconMusicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F9666B154385F9006CFC6E /* MaconMusicAppDelegate.m */; };
 		79F96671154385F9006CFC6E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F9666F154385F9006CFC6E /* MainStoryboard.storyboard */; };
 		79F96674154385F9006CFC6E /* HorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F96673154385F9006CFC6E /* HorizontalViewController.m */; };
 /* End PBXBuildFile section */
@@ -59,13 +58,12 @@
 		79F9665B154385F9006CFC6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79F9665D154385F9006CFC6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79F9665F154385F9006CFC6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		79F96663154385F9006CFC6E /* Macon Music-Info.plist */ = {isa = PBXFileReference; path = "Macon Music-Info.plist"; sourceTree = "<group>"; };
+		79F96663154385F9006CFC6E /* Macon Music-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Macon Music-Info.plist"; sourceTree = "<group>"; };
 		79F96665154385F9006CFC6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79F96667154385F9006CFC6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		79F96669154385F9006CFC6E /* Macon Music-Prefix.pch */ = {isa = PBXFileReference; path = "Macon Music-Prefix.pch"; sourceTree = "<group>"; };
-		79F9666A154385F9006CFC6E /* HorizontalAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalAppDelegate.h; sourceTree = "<group>"; };
-		79F9666B154385F9006CFC6E /* HorizontalAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalAppDelegate.m; sourceTree = "<group>"; };
-		79F9666D154385F9006CFC6E /* HorizontalScroll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HorizontalScroll.entitlements; sourceTree = "<group>"; };
+		79F96669154385F9006CFC6E /* Macon Music-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Macon Music-Prefix.pch"; sourceTree = "<group>"; };
+		79F9666A154385F9006CFC6E /* MaconMusicAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaconMusicAppDelegate.h; sourceTree = "<group>"; };
+		79F9666B154385F9006CFC6E /* MaconMusicAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaconMusicAppDelegate.m; sourceTree = "<group>"; };
 		79F96670154385F9006CFC6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		79F96672154385F9006CFC6E /* HorizontalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalViewController.h; sourceTree = "<group>"; };
 		79F96673154385F9006CFC6E /* HorizontalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalViewController.m; sourceTree = "<group>"; };
@@ -159,8 +157,8 @@
 		79F96661154385F9006CFC6E /* Macon Music */ = {
 			isa = PBXGroup;
 			children = (
-				79F9666A154385F9006CFC6E /* HorizontalAppDelegate.h */,
-				79F9666B154385F9006CFC6E /* HorizontalAppDelegate.m */,
+				79F9666A154385F9006CFC6E /* MaconMusicAppDelegate.h */,
+				79F9666B154385F9006CFC6E /* MaconMusicAppDelegate.m */,
 				79D27E561543DE7C0060AB6E /* Controllers */,
 				79D27E551543DE790060AB6E /* Views */,
 				79F96662154385F9006CFC6E /* Supporting Files */,
@@ -176,7 +174,6 @@
 				79F96664154385F9006CFC6E /* InfoPlist.strings */,
 				79F96667154385F9006CFC6E /* main.m */,
 				79F96669154385F9006CFC6E /* Macon Music-Prefix.pch */,
-				79F9666D154385F9006CFC6E /* HorizontalScroll.entitlements */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,7 +231,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F96666154385F9006CFC6E /* InfoPlist.strings in Resources */,
-				79F9666E154385F9006CFC6E /* HorizontalScroll.entitlements in Resources */,
 				79F96671154385F9006CFC6E /* MainStoryboard.storyboard in Resources */,
 				79D27E501543D14B0060AB6E /* README.md in Resources */,
 				79BFD8F615449A3900327A05 /* poster.png in Resources */,
@@ -262,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F96668154385F9006CFC6E /* main.m in Sources */,
-				79F9666C154385F9006CFC6E /* HorizontalAppDelegate.m in Sources */,
+				79F9666C154385F9006CFC6E /* MaconMusicAppDelegate.m in Sources */,
 				79F96674154385F9006CFC6E /* HorizontalViewController.m in Sources */,
 				79BFD8F915449FB200327A05 /* PosterViewController.m in Sources */,
 				7979F91D15461C9E001BDF08 /* BandViewController.m in Sources */,

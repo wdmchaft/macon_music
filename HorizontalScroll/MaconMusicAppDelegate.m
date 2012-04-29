@@ -1,14 +1,14 @@
 //
-//  HorizontalAppDelegate.m
-//  HorizontalScroll
+//  MaconMusicAppDelegate.m
+//  Macon Music
 //
 //  Created by Zach Williams on 4/21/12.
 //  Copyright (c) 2012 Zach Williams. All rights reserved.
 //
 
-#import "HorizontalAppDelegate.h"
+#import "MaconMusicAppDelegate.h"
 
-@implementation HorizontalAppDelegate
+@implementation MaconMusicAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
