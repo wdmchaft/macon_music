@@ -1,6 +1,6 @@
 //
 //  HorizontalViewController.m
-//  HorizontalScroll
+//  Macon Music
 //
 //  Created by Zach Williams on 4/21/12.
 //  Copyright (c) 2012 Zach Williams. All rights reserved.

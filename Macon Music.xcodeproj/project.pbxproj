@@ -170,10 +170,10 @@
 		79F96662154385F9006CFC6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79F96663154385F9006CFC6E /* Macon Music-Info.plist */,
 				79F96664154385F9006CFC6E /* InfoPlist.strings */,
-				79F96667154385F9006CFC6E /* main.m */,
+				79F96663154385F9006CFC6E /* Macon Music-Info.plist */,
 				79F96669154385F9006CFC6E /* Macon Music-Prefix.pch */,
+				79F96667154385F9006CFC6E /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

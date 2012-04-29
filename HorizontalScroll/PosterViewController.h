@@ -1,6 +1,6 @@
 //
 //  PosterViewController.h
-//  HorizontalScroll
+//  Macon Music
 //
 //  Created by Zach Williams on 4/22/12.
 //  Copyright (c) 2012 Zach Williams. All rights reserved.
