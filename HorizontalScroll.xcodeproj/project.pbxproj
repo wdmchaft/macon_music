@@ -29,7 +29,7 @@
 		79F96660154385F9006CFC6E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F9665F154385F9006CFC6E /* CoreGraphics.framework */; };
 		79F96666154385F9006CFC6E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79F96664154385F9006CFC6E /* InfoPlist.strings */; };
 		79F96668154385F9006CFC6E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F96667154385F9006CFC6E /* main.m */; };
-		79F9666C154385F9006CFC6E /* MaconMusicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F9666B154385F9006CFC6E /* MaconMusicAppDelegate.m */; };
+		79F9666C154385F9006CFC6E /* HorizontalAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F9666B154385F9006CFC6E /* HorizontalAppDelegate.m */; };
 		79F9666E154385F9006CFC6E /* HorizontalScroll.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 79F9666D154385F9006CFC6E /* HorizontalScroll.entitlements */; };
 		79F96671154385F9006CFC6E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F9666F154385F9006CFC6E /* MainStoryboard.storyboard */; };
 		79F96674154385F9006CFC6E /* HorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F96673154385F9006CFC6E /* HorizontalViewController.m */; };
@@ -54,18 +54,17 @@
 		79BFD8F515449A3900327A05 /* poster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poster.png; sourceTree = "<group>"; };
 		79BFD8F715449FB200327A05 /* PosterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterViewController.h; sourceTree = "<group>"; };
 		79BFD8F815449FB200327A05 /* PosterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterViewController.m; sourceTree = "<group>"; };
-		79D26624154DCF0700466DCB /* Macon Music.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Macon Music.entitlements"; sourceTree = SOURCE_ROOT; };
 		79D27E4F1543D14B0060AB6E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		79F96657154385F9006CFC6E /* Macon Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Macon Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79F96657154385F9006CFC6E /* HorizontalScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorizontalScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F9665B154385F9006CFC6E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		79F9665D154385F9006CFC6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79F9665F154385F9006CFC6E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		79F96663154385F9006CFC6E /* Macon Music-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Macon Music-Info.plist"; sourceTree = "<group>"; };
+		79F96663154385F9006CFC6E /* HorizontalScroll-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HorizontalScroll-Info.plist"; sourceTree = "<group>"; };
 		79F96665154385F9006CFC6E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79F96667154385F9006CFC6E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		79F96669154385F9006CFC6E /* Macon Music-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Macon Music-Prefix.pch"; sourceTree = "<group>"; };
-		79F9666A154385F9006CFC6E /* MaconMusicAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaconMusicAppDelegate.h; sourceTree = "<group>"; };
-		79F9666B154385F9006CFC6E /* MaconMusicAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MaconMusicAppDelegate.m; sourceTree = "<group>"; };
+		79F96669154385F9006CFC6E /* HorizontalScroll-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HorizontalScroll-Prefix.pch"; sourceTree = "<group>"; };
+		79F9666A154385F9006CFC6E /* HorizontalAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalAppDelegate.h; sourceTree = "<group>"; };
+		79F9666B154385F9006CFC6E /* HorizontalAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalAppDelegate.m; sourceTree = "<group>"; };
 		79F9666D154385F9006CFC6E /* HorizontalScroll.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = HorizontalScroll.entitlements; sourceTree = "<group>"; };
 		79F96670154385F9006CFC6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		79F96672154385F9006CFC6E /* HorizontalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalViewController.h; sourceTree = "<group>"; };
@@ -133,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				79D27E4F1543D14B0060AB6E /* README.md */,
-				79F96661154385F9006CFC6E /* Macon Music */,
+				79F96661154385F9006CFC6E /* HorizontalScroll */,
 				79F9665A154385F9006CFC6E /* Frameworks */,
 				79F96658154385F9006CFC6E /* Products */,
 			);
@@ -142,7 +141,7 @@
 		79F96658154385F9006CFC6E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79F96657154385F9006CFC6E /* Macon Music.app */,
+				79F96657154385F9006CFC6E /* HorizontalScroll.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,27 +156,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		79F96661154385F9006CFC6E /* Macon Music */ = {
+		79F96661154385F9006CFC6E /* HorizontalScroll */ = {
 			isa = PBXGroup;
 			children = (
-				79D26624154DCF0700466DCB /* Macon Music.entitlements */,
-				79F9666A154385F9006CFC6E /* MaconMusicAppDelegate.h */,
-				79F9666B154385F9006CFC6E /* MaconMusicAppDelegate.m */,
+				79F9666A154385F9006CFC6E /* HorizontalAppDelegate.h */,
+				79F9666B154385F9006CFC6E /* HorizontalAppDelegate.m */,
 				79D27E561543DE7C0060AB6E /* Controllers */,
 				79D27E551543DE790060AB6E /* Views */,
 				79F96662154385F9006CFC6E /* Supporting Files */,
 			);
-			name = "Macon Music";
-			path = "Macon Music";
+			path = HorizontalScroll;
 			sourceTree = "<group>";
 		};
 		79F96662154385F9006CFC6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79F96663154385F9006CFC6E /* Macon Music-Info.plist */,
+				79F96663154385F9006CFC6E /* HorizontalScroll-Info.plist */,
 				79F96664154385F9006CFC6E /* InfoPlist.strings */,
 				79F96667154385F9006CFC6E /* main.m */,
-				79F96669154385F9006CFC6E /* Macon Music-Prefix.pch */,
+				79F96669154385F9006CFC6E /* HorizontalScroll-Prefix.pch */,
 				79F9666D154385F9006CFC6E /* HorizontalScroll.entitlements */,
 			);
 			name = "Supporting Files";
@@ -186,9 +183,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79F96656154385F9006CFC6E /* Macon Music */ = {
+		79F96656154385F9006CFC6E /* HorizontalScroll */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79F96677154385F9006CFC6E /* Build configuration list for PBXNativeTarget "Macon Music" */;
+			buildConfigurationList = 79F96677154385F9006CFC6E /* Build configuration list for PBXNativeTarget "HorizontalScroll" */;
 			buildPhases = (
 				79F96653154385F9006CFC6E /* Sources */,
 				79F96654154385F9006CFC6E /* Frameworks */,
@@ -198,9 +195,9 @@
 			);
 			dependencies = (
 			);
-			name = "Macon Music";
+			name = HorizontalScroll;
 			productName = HorizontalScroll;
-			productReference = 79F96657154385F9006CFC6E /* Macon Music.app */;
+			productReference = 79F96657154385F9006CFC6E /* HorizontalScroll.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +210,7 @@
 				LastUpgradeCheck = 0440;
 				ORGANIZATIONNAME = "Zach Williams";
 			};
-			buildConfigurationList = 79F96651154385F9006CFC6E /* Build configuration list for PBXProject "Macon Music" */;
+			buildConfigurationList = 79F96651154385F9006CFC6E /* Build configuration list for PBXProject "HorizontalScroll" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -225,7 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79F96656154385F9006CFC6E /* Macon Music */,
+				79F96656154385F9006CFC6E /* HorizontalScroll */,
 			);
 		};
 /* End PBXProject section */
@@ -264,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79F96668154385F9006CFC6E /* main.m in Sources */,
-				79F9666C154385F9006CFC6E /* MaconMusicAppDelegate.m in Sources */,
+				79F9666C154385F9006CFC6E /* HorizontalAppDelegate.m in Sources */,
 				79F96674154385F9006CFC6E /* HorizontalViewController.m in Sources */,
 				79BFD8F915449FB200327A05 /* PosterViewController.m in Sources */,
 				7979F91D15461C9E001BDF08 /* BandViewController.m in Sources */,
@@ -343,11 +340,10 @@
 		79F96678154385F9006CFC6E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Macon Music.entitlements";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HorizontalScroll/Macon Music-Prefix.pch";
-				INFOPLIST_FILE = "HorizontalScroll/Macon Music-Info.plist";
-				PRODUCT_NAME = "Macon Music";
+				GCC_PREFIX_HEADER = "HorizontalScroll/HorizontalScroll-Prefix.pch";
+				INFOPLIST_FILE = "HorizontalScroll/HorizontalScroll-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -355,11 +351,10 @@
 		79F96679154385F9006CFC6E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Macon Music.entitlements";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HorizontalScroll/Macon Music-Prefix.pch";
-				INFOPLIST_FILE = "HorizontalScroll/Macon Music-Info.plist";
-				PRODUCT_NAME = "Macon Music";
+				GCC_PREFIX_HEADER = "HorizontalScroll/HorizontalScroll-Prefix.pch";
+				INFOPLIST_FILE = "HorizontalScroll/HorizontalScroll-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -367,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79F96651154385F9006CFC6E /* Build configuration list for PBXProject "Macon Music" */ = {
+		79F96651154385F9006CFC6E /* Build configuration list for PBXProject "HorizontalScroll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79F96675154385F9006CFC6E /* Debug */,
@@ -376,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79F96677154385F9006CFC6E /* Build configuration list for PBXNativeTarget "Macon Music" */ = {
+		79F96677154385F9006CFC6E /* Build configuration list for PBXNativeTarget "HorizontalScroll" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79F96678154385F9006CFC6E /* Debug */,

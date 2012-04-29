@@ -142,13 +142,6 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
     [self.navigationController pushViewController:controller animated:YES];
 }
 
-- (IBAction)openFacebook:(id)sender {
-    // The user tapped the Facebook button. Open the
-    // app's Facebook page in Safari.
-    NSURL *url = [NSURL URLWithString:@"http://codeforamerica.org"];
-    [[UIApplication sharedApplication] openURL:url];
-}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"More Info"]) {

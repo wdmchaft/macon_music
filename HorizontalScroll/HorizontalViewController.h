@@ -18,6 +18,5 @@
 
 - (IBAction)changePage:(id)sender;
 - (IBAction)posterTap:(id)sender;
-- (IBAction)openFacebook:(id)sender;
 
 @end
