@@ -62,7 +62,7 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 - (void)loadScrollView
 {
     // Load the UIScrollView with the Poster controller from the storyboard.
-    NSArray *posters = @[ @"otis", @"richard", @"otis", @"poster"];
+    NSArray *posters = @[ @"otis", @"richard", @"allman", @"poster"];
     for (int page = 0; page < PAGE_COUNT; page++) {
         // Calculate the correct frame.
         CGRect frame = scrollView.frame;
