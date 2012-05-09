@@ -33,6 +33,7 @@
 		79F9666C154385F9006CFC6E /* MaconMusicAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F9666B154385F9006CFC6E /* MaconMusicAppDelegate.m */; };
 		79F96671154385F9006CFC6E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F9666F154385F9006CFC6E /* MainStoryboard.storyboard */; };
 		79F96674154385F9006CFC6E /* HorizontalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F96673154385F9006CFC6E /* HorizontalViewController.m */; };
+		79FF9765155B15F0001D32E4 /* richard.png in Resources */ = {isa = PBXBuildFile; fileRef = 79FF9764155B15F0001D32E4 /* richard.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		79F96670154385F9006CFC6E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		79F96672154385F9006CFC6E /* HorizontalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalViewController.h; sourceTree = "<group>"; };
 		79F96673154385F9006CFC6E /* HorizontalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalViewController.m; sourceTree = "<group>"; };
+		79FF9764155B15F0001D32E4 /* richard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = richard.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				79892CD5155A4E91007BC516 /* otis.png */,
+				79FF9764155B15F0001D32E4 /* richard.png */,
 				79227B18154516C700E893DC /* Icon.png */,
 				79227B19154516C700E893DC /* Icon@2x.png */,
 				7979F91615461704001BDF08 /* back.png */,
@@ -251,6 +254,7 @@
 				7979F92015462888001BDF08 /* hidden_view.png in Resources */,
 				7979F92115462888001BDF08 /* hidden_view@2x.png in Resources */,
 				79892CD6155A4E91007BC516 /* otis.png in Resources */,
+				79FF9765155B15F0001D32E4 /* richard.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

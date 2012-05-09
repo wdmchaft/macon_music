@@ -62,6 +62,7 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
 - (void)loadScrollView
 {
     // Load the UIScrollView with the Poster controller from the storyboard.
+    NSArray *posters = @[ @"otis", @"richard", @"otis", @"poster"];
     for (int page = 0; page < PAGE_COUNT; page++) {
         // Calculate the correct frame.
         CGRect frame = scrollView.frame;
@@ -76,10 +77,13 @@ static NSUInteger SCROLLVIEW_HEIGHT = 360;
         // Make sure we can access when the poster image is tapped.
         [controller.button addTarget:self action:@selector(posterTap:) forControlEvents:UIControlEventTouchUpInside];
         
+        NSString *posterName = [posters objectAtIndex:page];
+        UIImage *poster = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png", posterName]];
+        controller.button.imageView.image = poster;
+        
         // Add the PosterViewController's view to the UIScrollView.
         [scrollView addSubview:controller.view];
         
-        NSLog(@"%@", controller.button.imageView.image);
     }
 }
 
